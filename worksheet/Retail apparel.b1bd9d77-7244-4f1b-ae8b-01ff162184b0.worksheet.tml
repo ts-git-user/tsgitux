@@ -1,0 +1,93 @@
+guid: b1bd9d77-7244-4f1b-ae8b-01ff162184b0
+worksheet:
+  name: Retail apparel
+  schema:
+    tables:
+    - name: DIM_RETAPP_STORES
+      fqn: 20431083-281f-4ff1-b8fa-d6505cde5d93
+    - name: FACT_RETAPP_SALES_NEW
+      fqn: fe08e245-47bb-4c69-9524-84a9efc738f4
+      joins:
+      - with: DIM_RETAPP_STORES
+        referencing_join: C_DIM_RETAPP_STORES
+  worksheet_columns:
+  - name: Storename
+    column_id: DIM_RETAPP_STORES::STORENAME
+    properties:
+      column_type: ATTRIBUTE
+  - name: County
+    column_id: DIM_RETAPP_STORES::COUNTY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Region
+    column_id: DIM_RETAPP_STORES::REGION
+    properties:
+      column_type: ATTRIBUTE
+  - name: City
+    column_id: DIM_RETAPP_STORES::CITY
+    properties:
+      column_type: ATTRIBUTE
+  - name: Zipcode
+    column_id: DIM_RETAPP_STORES::ZIPCODE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Longitude
+    column_id: DIM_RETAPP_STORES::LONGITUDE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Latitude
+    column_id: DIM_RETAPP_STORES::LATITUDE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: State
+    column_id: DIM_RETAPP_STORES::STATE
+    properties:
+      column_type: ATTRIBUTE
+  - name: Itemprice
+    column_id: FACT_RETAPP_SALES_NEW::ITEMPRICE
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Productid
+    column_id: FACT_RETAPP_SALES_NEW::PRODUCTID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Salesid
+    column_id: FACT_RETAPP_SALES_NEW::SALESID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Sales
+    column_id: FACT_RETAPP_SALES_NEW::SALES
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Quantitypurchased
+    column_id: FACT_RETAPP_SALES_NEW::QUANTITYPURCHASED
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  - name: Recorddate
+    column_id: FACT_RETAPP_SALES_NEW::RECORDDATE
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+  - name: Storeid
+    column_id: FACT_RETAPP_SALES_NEW::STOREID
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+  properties:
+    is_bypass_rls: false
+    join_progressive: true
