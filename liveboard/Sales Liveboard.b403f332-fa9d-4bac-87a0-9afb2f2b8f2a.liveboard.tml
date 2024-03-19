@@ -29,7 +29,7 @@ liveboard:
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
-        type: STACKED_COLUMN
+        type: STACKED_BAR
         chart_columns:
         - column_id: State
         - column_id: Region
