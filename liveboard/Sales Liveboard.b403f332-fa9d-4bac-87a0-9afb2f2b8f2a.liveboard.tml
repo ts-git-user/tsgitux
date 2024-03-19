@@ -32,8 +32,8 @@ liveboard:
         type: STACKED_BAR
         chart_columns:
         - column_id: State
-        - column_id: Region
         - column_id: Total Sales
+        - column_id: Region
         axis_configs:
         - x:
           - State
@@ -55,8 +55,8 @@ liveboard:
       search_query: "[sales] [item type] [state]"
       answer_columns:
       - name: Total sales
-      - name: item type
       - name: state
+      - name: item type
       table:
         table_columns:
         - column_id: item type
@@ -75,8 +75,8 @@ liveboard:
         type: STACKED_COLUMN
         chart_columns:
         - column_id: item type
-        - column_id: state
         - column_id: Total sales
+        - column_id: state
         axis_configs:
         - x:
           - item type
@@ -97,8 +97,8 @@ liveboard:
         fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
       search_query: "[sales] [city]"
       answer_columns:
-      - name: Total sales
       - name: city
+      - name: Total sales
       table:
         table_columns:
         - column_id: city
@@ -122,7 +122,7 @@ liveboard:
           - Total sales
         client_state: ""
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"city\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d4f2c4e9-9c57-4fd4-8ad9-29a7e692d11c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"15e9e8ae-067d-4bd8-97b9-9e7abc094aee\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#06BF7F\"}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total sales\",\"colorMap\": [{\"serieName\": \"7027e51e-53c4-43d9-a605-a4c5d1af6835\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
-      display_mode: TABLE_MODE
+      display_mode: CHART_MODE
     viz_guid: 0b34a997-853e-4ce3-ac8b-944a9fede5f6
   layout:
     tabs:
