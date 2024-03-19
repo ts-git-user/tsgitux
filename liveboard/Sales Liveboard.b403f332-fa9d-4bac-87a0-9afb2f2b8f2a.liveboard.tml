@@ -125,10 +125,24 @@ liveboard:
       display_mode: CHART_MODE
     viz_guid: 0b34a997-853e-4ce3-ac8b-944a9fede5f6
   layout:
-    tiles:
-    - visualization_id: Viz_1
-      size: MEDIUM
-    - visualization_id: Viz_2
-      size: MEDIUM
-    - visualization_id: Viz_3
-      size: MEDIUM
+    tabs:
+    - name: Summary view
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_2
+        x: 6
+        "y": 0
+        height: 8
+        width: 6
+      - visualization_id: Viz_3
+        x: 0
+        "y": 8
+        height: 8
+        width: 6
+    - name: Detailed view
+      description: ""
