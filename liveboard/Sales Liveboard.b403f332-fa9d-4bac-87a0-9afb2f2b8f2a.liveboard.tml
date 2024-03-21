@@ -124,6 +124,42 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total sales\",\"columnProperty\": {}},{\"columnId\": \"city\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"d4f2c4e9-9c57-4fd4-8ad9-29a7e692d11c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": false}},{\"id\": \"15e9e8ae-067d-4bd8-97b9-9e7abc094aee\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total sales\",\"color\": \"#06BF7F\"}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total sales\",\"colorMap\": [{\"serieName\": \"7027e51e-53c4-43d9-a605-a4c5d1af6835\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 0b34a997-853e-4ce3-ac8b-944a9fede5f6
+  - id: Viz_4
+    answer:
+      name: Total Sales by Region
+      tables:
+      - id: Retail apparel
+        name: Retail apparel
+        fqn: b1bd9d77-7244-4f1b-ae8b-01ff162184b0
+      search_query: "[Sales] [State] [Region].East [Region].Midwest [Region].South [Region].Southwest [Region].West"
+      answer_columns:
+      - name: Total Sales
+      - name: State
+      table:
+        table_columns:
+        - column_id: State
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - State
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: GEO_AREA
+        chart_columns:
+        - column_id: State
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - State
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"State\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7982ceb4-eca2-41c8-a296-9a578b6dd538\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"0b0166db-9b7c-425b-8bff-d6d27537bc52\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+      display_mode: CHART_MODE
+    viz_guid: ed66a9dc-7505-4338-9793-2b24b882654c
   layout:
     tabs:
     - name: Summary view
@@ -147,3 +183,4 @@ liveboard:
         "y": 0
         height: 8
         width: 12
+      - visualization_id: Viz_4
