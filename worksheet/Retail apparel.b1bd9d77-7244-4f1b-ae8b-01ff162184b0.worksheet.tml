@@ -43,7 +43,7 @@ worksheet:
       column_type: MEASURE
       aggregation: SUM
       index_type: DONT_INDEX
-  - name: State
+  - name: State2
     column_id: DIM_RETAPP_STORES::STATE
     properties:
       column_type: ATTRIBUTE
