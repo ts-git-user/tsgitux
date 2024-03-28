@@ -1,0 +1,35 @@
+guid: 1e44a3cc-96c7-4e44-8bc2-d863fa98b81e
+answer:
+  name: Total quantity purchased by Monthly date
+  tables:
+  - id: (Sample) Retail - Apparel
+    name: (Sample) Retail - Apparel
+    fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
+  search_query: "[quantity purchased] [date] [date].monthly [city].atlanta"
+  answer_columns:
+  - name: Total quantity purchased
+  - name: Month(date)
+  table:
+    table_columns:
+    - column_id: Month(date)
+      show_headline: false
+    - column_id: Total quantity purchased
+      show_headline: false
+    ordered_column_ids:
+    - Month(date)
+    - Total quantity purchased
+    client_state: ""
+    client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+  chart:
+    type: LINE
+    chart_columns:
+    - column_id: Month(date)
+    - column_id: Total quantity purchased
+    axis_configs:
+    - x:
+      - Month(date)
+      "y":
+      - Total quantity purchased
+    client_state: ""
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Month(date)\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"6c26ca59-65d6-4bda-aa96-1c24ccbd228c\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"97f07d62-0227-4229-a07e-15464c1ffaac\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#FCC838\"}]}"
+  display_mode: CHART_MODE
