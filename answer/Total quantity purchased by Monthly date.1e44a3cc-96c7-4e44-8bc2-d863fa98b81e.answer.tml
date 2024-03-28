@@ -5,31 +5,31 @@ answer:
   - id: (Sample) Retail - Apparel
     name: (Sample) Retail - Apparel
     fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
-  search_query: "[quantity purchased] [county]"
+  search_query: "average [quantity purchased] [county]"
   answer_columns:
-  - name: Total quantity purchased
+  - name: Average quantity purchased
   - name: county
   table:
     table_columns:
     - column_id: county
       show_headline: false
-    - column_id: Total quantity purchased
+    - column_id: Average quantity purchased
       show_headline: false
     ordered_column_ids:
     - county
-    - Total quantity purchased
+    - Average quantity purchased
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
     type: COLUMN
     chart_columns:
     - column_id: county
-    - column_id: Total quantity purchased
+    - column_id: Average quantity purchased
     axis_configs:
     - x:
       - county
       "y":
-      - Total quantity purchased
+      - Average quantity purchased
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"county\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2a0bc426-8c37-4d04-aa74-19e337945b38\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"fee2b71f-466f-47d4-b5c9-014d033c7b15\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"county\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#FF8142\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Average quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"county\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"2a0bc426-8c37-4d04-aa74-19e337945b38\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Average quantity purchased\"],\"isOpposite\": false}},{\"id\": \"fee2b71f-466f-47d4-b5c9-014d033c7b15\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"county\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Average quantity purchased\",\"color\": \"#FF8142\"}]}"
   display_mode: CHART_MODE
