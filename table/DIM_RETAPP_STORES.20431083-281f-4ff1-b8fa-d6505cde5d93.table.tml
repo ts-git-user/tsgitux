@@ -6,7 +6,6 @@ table:
   db_table: DIM_RETAPP_STORES
   connection:
     name: test conn
-    fqn: c132e927-30ec-4dbf-bee2-5c2ea931d989
   columns:
   - name: STOREID
     db_column_name: STOREID
