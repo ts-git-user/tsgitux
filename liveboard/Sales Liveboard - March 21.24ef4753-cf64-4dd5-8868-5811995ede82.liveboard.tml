@@ -9,16 +9,16 @@ liveboard:
       - id: Retail apparel
         name: Retail apparel
         fqn: b1bd9d77-7244-4f1b-ae8b-01ff162184b0
-      search_query: "[Sales] [State2] [Region]"
+      search_query: "[Sales] [State] [Region]"
       answer_columns:
       - name: Region
-      - name: State2
+      - name: State
       - name: Total Sales
       table:
         table_columns:
         - column_id: Region
           show_headline: false
-        - column_id: State2
+        - column_id: State
           show_headline: false
         - column_id: Total Sales
           show_headline: false
@@ -28,17 +28,17 @@ liveboard:
         type: STACKED_BAR
         chart_columns:
         - column_id: Region
-        - column_id: State2
+        - column_id: State
         - column_id: Total Sales
         axis_configs:
         - x:
-          - State2
+          - State
           "y":
           - Total Sales
           color:
           - Region
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"State2\",\"columnProperty\": {}},{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"555e42a1-b92a-462c-af0a-a24ee66e883f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"a82b2143-7bfa-4db5-88e4-745d0ce97ba0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State2\"]}}],\"systemSeriesColors\": [{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"State\",\"columnProperty\": {}},{\"columnId\": \"Region\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"555e42a1-b92a-462c-af0a-a24ee66e883f\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"a82b2143-7bfa-4db5-88e4-745d0ce97ba0\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State\"]}}],\"systemSeriesColors\": [{\"serieName\": \"east\",\"color\": \"#06BF7F\"},{\"serieName\": \"midwest\",\"color\": \"#FCC838\"},{\"serieName\": \"south\",\"color\": \"#48D1E0\"},{\"serieName\": \"southwest\",\"color\": \"#71A1F4\"},{\"serieName\": \"west\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
     viz_guid: 9250ae9c-36b5-4b3a-b2e7-ece20870c5bd
   - id: Viz_2
@@ -120,13 +120,13 @@ liveboard:
       - id: Retail apparel
         name: Retail apparel
         fqn: b1bd9d77-7244-4f1b-ae8b-01ff162184b0
-      search_query: "[Sales] [State2] [Region].east [Region].midwest [Region].south [Region].southwest [Region].west"
+      search_query: "[Sales] [State] [Region].east [Region].midwest [Region].south [Region].southwest [Region].west"
       answer_columns:
-      - name: State2
+      - name: State
       - name: Total Sales
       table:
         table_columns:
-        - column_id: State2
+        - column_id: State
           show_headline: false
         - column_id: Total Sales
           show_headline: false
@@ -135,15 +135,15 @@ liveboard:
       chart:
         type: GEO_AREA
         chart_columns:
-        - column_id: State2
+        - column_id: State
         - column_id: Total Sales
         axis_configs:
         - x:
-          - State2
+          - State
           "y":
           - Total Sales
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"State2\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7982ceb4-eca2-41c8-a296-9a578b6dd538\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"0b0166db-9b7c-425b-8bff-d6d27537bc52\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State2\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"State2\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Total Sales\",\"columnProperty\": {}},{\"columnId\": \"State\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7982ceb4-eca2-41c8-a296-9a578b6dd538\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"0b0166db-9b7c-425b-8bff-d6d27537bc52\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 92450ec6-6119-490e-884d-10b8f0d0d81e
   - id: Viz_5
@@ -153,13 +153,13 @@ liveboard:
       - id: Retail apparel
         name: Retail apparel
         fqn: b1bd9d77-7244-4f1b-ae8b-01ff162184b0
-      search_query: "[Sales] [State2]"
+      search_query: "[Sales] [State]"
       answer_columns:
-      - name: State2
+      - name: State
       - name: Total Sales
       table:
         table_columns:
-        - column_id: State2
+        - column_id: State
           show_headline: false
         - column_id: Total Sales
           show_headline: false
@@ -168,15 +168,15 @@ liveboard:
       chart:
         type: GEO_AREA
         chart_columns:
-        - column_id: State2
+        - column_id: State
         - column_id: Total Sales
         axis_configs:
         - x:
-          - State2
+          - State
           "y":
           - Total Sales
         client_state: ""
-        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"State2\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4d87ecf5-59a6-4def-88f1-d6cfbec4242b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"25852fc3-b975-4976-a00c-faab7953b9e7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State2\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"State2\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"4d87ecf5-59a6-4def-88f1-d6cfbec4242b\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"25852fc3-b975-4976-a00c-faab7953b9e7\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State\"]}}],\"systemMultiColorSeriesColors\": [{\"serieName\": \"Total Sales\",\"colorMap\": [{\"serieName\": \"State\",\"color\": [\"#ffffb2\",\"#fddd87\",\"#fba35d\",\"#f75534\",\"#f9140a\",\"#d70315\",\"#b10026\"]}]}]}"
       display_mode: CHART_MODE
     viz_guid: 797df296-7394-4fde-86fc-e50b303a5fcb
   layout:
