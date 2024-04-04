@@ -6,6 +6,7 @@ table:
   db_table: FACT_RETAPP_SALES_NEW
   connection:
     name: test conn
+    fqn: 453a706e-f4f0-44aa-8759-ff87f6f4b2eb
   columns:
   - name: SALESID
     db_column_name: SALESID

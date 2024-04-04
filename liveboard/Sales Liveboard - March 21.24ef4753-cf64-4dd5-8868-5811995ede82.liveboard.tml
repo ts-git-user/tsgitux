@@ -11,29 +11,25 @@ liveboard:
         fqn: b1bd9d77-7244-4f1b-ae8b-01ff162184b0
       search_query: "[Sales] [State2] [Region]"
       answer_columns:
-      - name: Total Sales
-      - name: State2
       - name: Region
+      - name: State2
+      - name: Total Sales
       table:
         table_columns:
-        - column_id: State2
-          show_headline: false
         - column_id: Region
+          show_headline: false
+        - column_id: State2
           show_headline: false
         - column_id: Total Sales
           show_headline: false
-        ordered_column_ids:
-        - State2
-        - Region
-        - Total Sales
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
         type: STACKED_BAR
         chart_columns:
+        - column_id: Region
         - column_id: State2
         - column_id: Total Sales
-        - column_id: Region
         axis_configs:
         - x:
           - State2
@@ -55,27 +51,23 @@ liveboard:
       search_query: "[sales] [item type] [state]"
       answer_columns:
       - name: Total sales
-      - name: state
       - name: item type
+      - name: state
       table:
         table_columns:
+        - column_id: Total sales
+          show_headline: false
         - column_id: item type
           show_headline: false
         - column_id: state
           show_headline: false
-        - column_id: Total sales
-          show_headline: false
-        ordered_column_ids:
-        - item type
-        - state
-        - Total sales
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
         type: STACKED_COLUMN
         chart_columns:
-        - column_id: item type
         - column_id: Total sales
+        - column_id: item type
         - column_id: state
         axis_configs:
         - x:
@@ -97,24 +89,21 @@ liveboard:
         fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
       search_query: "[sales] [city]"
       answer_columns:
-      - name: city
       - name: Total sales
+      - name: city
       table:
         table_columns:
-        - column_id: city
-          show_headline: false
         - column_id: Total sales
           show_headline: false
-        ordered_column_ids:
-        - city
-        - Total sales
+        - column_id: city
+          show_headline: false
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
         type: COLUMN
         chart_columns:
-        - column_id: city
         - column_id: Total sales
+        - column_id: city
         axis_configs:
         - x:
           - city
@@ -131,19 +120,16 @@ liveboard:
       - id: Retail apparel
         name: Retail apparel
         fqn: b1bd9d77-7244-4f1b-ae8b-01ff162184b0
-      search_query: "[Sales] [State2] [Region].East [Region].Midwest [Region].South [Region].Southwest [Region].West"
+      search_query: "[Sales] [State2] [Region].east [Region].midwest [Region].south [Region].southwest [Region].west"
       answer_columns:
-      - name: Total Sales
       - name: State2
+      - name: Total Sales
       table:
         table_columns:
         - column_id: State2
           show_headline: false
         - column_id: Total Sales
           show_headline: false
-        ordered_column_ids:
-        - State2
-        - Total Sales
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:
@@ -169,17 +155,14 @@ liveboard:
         fqn: b1bd9d77-7244-4f1b-ae8b-01ff162184b0
       search_query: "[Sales] [State2]"
       answer_columns:
-      - name: Total Sales
       - name: State2
+      - name: Total Sales
       table:
         table_columns:
         - column_id: State2
           show_headline: false
         - column_id: Total Sales
           show_headline: false
-        ordered_column_ids:
-        - State2
-        - Total Sales
         client_state: ""
         client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
       chart:

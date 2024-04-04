@@ -1,16 +1,15 @@
 guid: b1bd9d77-7244-4f1b-ae8b-01ff162184b0
-worksheet:
+model:
   name: Retail apparel
-  schema:
-    tables:
-    - name: DIM_RETAPP_STORES
-      fqn: 20431083-281f-4ff1-b8fa-d6505cde5d93
-    - name: FACT_RETAPP_SALES_NEW
-      fqn: fe08e245-47bb-4c69-9524-84a9efc738f4
-      joins:
-      - with: DIM_RETAPP_STORES
-        referencing_join: C_DIM_RETAPP_STORES
-  worksheet_columns:
+  model_tables:
+  - name: DIM_RETAPP_STORES
+    fqn: 20431083-281f-4ff1-b8fa-d6505cde5d93
+  - name: FACT_RETAPP_SALES_NEW
+    fqn: fe08e245-47bb-4c69-9524-84a9efc738f4
+    joins:
+    - with: DIM_RETAPP_STORES
+      referencing_join: C_DIM_RETAPP_STORES
+  columns:
   - name: Storename
     column_id: DIM_RETAPP_STORES::STORENAME
     properties:
