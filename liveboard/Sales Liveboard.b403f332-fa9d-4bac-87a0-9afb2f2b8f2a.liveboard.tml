@@ -168,9 +168,9 @@ liveboard:
         x: 0
         "y": 0
         height: 4
-        width: 3
+        width: 12
       - visualization_id: Viz_4
-        x: 3
-        "y": 0
+        x: 0
+        "y": 4
         height: 4
-        width: 3
+        width: 12
