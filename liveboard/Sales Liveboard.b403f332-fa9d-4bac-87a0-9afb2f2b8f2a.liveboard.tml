@@ -167,10 +167,10 @@ liveboard:
       - visualization_id: Viz_3
         x: 0
         "y": 0
-        height: 8
-        width: 12
+        height: 4
+        width: 3
       - visualization_id: Viz_4
-        x: 0
-        "y": 8
-        height: 8
-        width: 6
+        x: 3
+        "y": 0
+        height: 4
+        width: 3
